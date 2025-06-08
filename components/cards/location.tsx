@@ -1,0 +1,186 @@
+"use client"
+
+import { defaultVariantsNoDelay } from "@/components/motion-variants"
+import createGlobe from "cobe"
+import { motion } from "motion/react"
+import { Globe } from "lucide-react"
+import { useTheme } from "next-themes"
+import * as React from "react"
+import { useSpring } from "react-spring"
+
+export function LocationCard() {
+   const { resolvedTheme } = useTheme()
+   const canvasRef = React.useRef<HTMLCanvasElement>(null)
+   const pointerInteracting = React.useRef<number | null>(null)
+   const pointerInteractionMovement = React.useRef(0)
+   const fadeMask =
+      "radial-gradient(circle at 50% 50%, rgb(0, 0, 0) 60%, rgb(0, 0, 0, 0) 70%)"
+
+   const [{ r }, api] = useSpring(() => ({
+      r: 0,
+      config: {
+         mass: 0.5,
+         tension: 200,
+         friction: 20,
+         precision: 0.001,
+      },
+   }))
+
+   React.useEffect(() => {
+      let width = 0
+      let phi = 3
+      let direction = 1
+      let time = 0
+
+      const onResize = () => {
+         if (canvasRef.current && (width = canvasRef.current.offsetWidth)) {
+            window.addEventListener("resize", onResize)
+         }
+      }
+      onResize()
+
+      if (!canvasRef.current) return
+
+      const globe = createGlobe(canvasRef.current, {
+         devicePixelRatio: 2,
+         width: width * 2,
+         height: width * 2,
+         phi: 0,
+         theta: 0.2,
+         dark: resolvedTheme === "dark" ? 1 : 0,
+         diffuse: 3,
+         mapSamples: 36_000,
+         mapBrightness: 2.5,
+         baseColor: resolvedTheme === "dark" ? [0.5, 0.5, 0.5] : [1, 1, 1],
+         markerColor: [1.5, 100 / 255, 100 / 255],
+         glowColor:
+            resolvedTheme === "dark" ? [0.5, 0.5, 0.5] : [0.9, 0.9, 0.9],
+         markers: [
+            // vadodara gujarat latitude and longitude
+            { location: [22.3000, 73.2065], size: 0.3 },
+         ],
+         scale: 1,
+         onRender: (state) => {
+            time += 0.02
+
+            // Animate marker glow effect
+            const glowIntensity = 0.5 + 0.5 * Math.sin(time * 2)
+            const markerSize = 0.25 + 0.05 * Math.sin(time * 2)
+
+            state.phi = phi + r.get()
+
+            if (state.phi > 5.5) direction = -1
+            else if (state.phi < 3.25) direction = 1
+
+            if (direction === 1) {
+               phi += 0.001
+            } else {
+               phi -= 0.001
+            }
+
+            // Update marker with pulsing effect
+            state.markers = [
+               {
+                  location: [22.3000, 73.2065],
+                  size: markerSize,
+                  color: [1.5 * glowIntensity, (100 / 255) * glowIntensity, (100 / 255) * glowIntensity]
+               }
+            ]
+
+            state.width = width * 2
+            state.height = width * 2
+         },
+      })
+
+      return () => {
+         globe.destroy()
+         window.removeEventListener("resize", onResize)
+      }
+   }, [r, resolvedTheme])
+
+   return (
+      <motion.div
+         variants={defaultVariantsNoDelay}
+         whileHover={{ scale: 1.05 }}
+         className="card-border relative col-span-4 col-start-5 row-span-3 row-start-2 flex flex-col gap-6 overflow-hidden rounded-xl bg-white p-4 dark:bg-neutral-900 md:col-span-2 md:col-start-6 md:row-span-2 md:row-start-2 md:h-40"
+      >
+         <div className="z-10 flex items-center gap-2">
+            <Globe className="size-[18px]" />
+            <h2 className="text-sm font-light">Vadodara</h2>
+         </div>
+         <div className="absolute inset-x-0 bottom-[-75%] mx-auto aspect-square h-[150%] translate-x-[-12.5%] [@media(max-width:420px)]:h-[320px]">
+            <div
+               style={{
+                  width: "100%",
+                  height: "100%",
+                  display: "flex",
+                  placeItems: "center",
+                  placeContent: "center",
+                  overflow: "visible",
+               }}
+            >
+               <div
+                  style={{
+                     width: "100%",
+                     aspectRatio: "1/1",
+                     WebkitMaskImage: fadeMask,
+                     maskImage: fadeMask,
+                  }}
+               >
+                  <canvas
+                     ref={canvasRef}
+                     onPointerDown={(e) => {
+                        pointerInteracting.current =
+                           e.clientX - pointerInteractionMovement.current
+                        if (canvasRef.current) {
+                           canvasRef.current.style.cursor = "grabbing"
+                        }
+                     }}
+                     onPointerUp={() => {
+                        pointerInteracting.current = null
+                        if (canvasRef.current) {
+                           canvasRef.current.style.cursor = "grab"
+                        }
+                     }}
+                     onPointerOut={() => {
+                        pointerInteracting.current = null
+                        if (canvasRef.current) {
+                           canvasRef.current.style.cursor = "grab"
+                        }
+                     }}
+                     onMouseMove={(e) => {
+                        if (pointerInteracting.current !== null) {
+                           const delta = e.clientX - pointerInteracting.current
+                           pointerInteractionMovement.current = delta
+                           api.start({
+                              r: delta / 200,
+                           })
+                        }
+                     }}
+                     onTouchMove={(e) => {
+                        if (
+                           pointerInteracting.current !== null &&
+                           e.touches[0]
+                        ) {
+                           const delta =
+                              e.touches[0].clientX - pointerInteracting.current
+                           pointerInteractionMovement.current = delta
+                           api.start({
+                              r: delta / 100,
+                           })
+                        }
+                     }}
+                     style={{
+                        width: "100%",
+                        height: "100%",
+                        contain: "layout paint size",
+                        cursor: "auto",
+                        userSelect: "none",
+                     }}
+                  />
+               </div>
+            </div>
+         </div>
+      </motion.div>
+   )
+}

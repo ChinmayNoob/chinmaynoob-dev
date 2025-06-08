@@ -1,17 +1,13 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Epilogue } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+import { Header } from "@/components/layouts/header";
+import { Footer } from "@/components/layouts/footer";
+import { ThemeProvider } from "@/components/theme-provider";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const epilogue = Epilogue({ subsets: ["latin"] })
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,11 +20,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={cn(
+          "bg-neutral-100 text-neutral-700 dark:bg-neutral-950 dark:text-neutral-300",
+          epilogue.className,
+        )}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="container flex min-h-screen max-w-2xl flex-col">
+            <Header />
+            <main className="flex flex-1 flex-col pb-20 pt-40 md:pt-48">
+              {children}
+            </main>
+            <Footer />
+          </div>
+        </ThemeProvider>
+        <div className="pointer-events-none fixed inset-0 z-[99] h-full w-full overflow-hidden bg-[url(/assets/noise.png)] opacity-30 dark:opacity-[0.17]" />
       </body>
     </html>
   );
