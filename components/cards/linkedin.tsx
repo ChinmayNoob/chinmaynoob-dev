@@ -9,7 +9,7 @@ export function LinkedInCard() {
    const MotionLink = motion(Link)
    return (
       <MotionLink
-         href={"https://linkedin.com/in/olivercederborg"}
+         href={"https://www.linkedin.com/in/chinmay-sawant0408/"}
          target="_blank"
          title="Linkedin profile"
          variants={defaultVariantsNoDelay}

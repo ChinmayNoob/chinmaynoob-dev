@@ -9,7 +9,7 @@ export function LeetcodeCard() {
     const MotionLink = motion(Link)
     return (
         <MotionLink
-            href={"https://leetcode.com/chinmaynoob"}
+            href={"https://leetcode.com/u/chinmaysk0408/"}
             target="_blank"
             title="Leetcode profile"
             variants={defaultVariantsNoDelay}
