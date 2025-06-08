@@ -20,7 +20,7 @@ export function GithubStatsCard({
    const MotionLink = motion(Link)
    return (
       <MotionLink
-         href="https://github.com/olivercederborg"
+         href="https://github.com/chinmaynoob"
          target="_blank"
          variants={defaultVariantsNoDelay}
          whileHover={{ scale: 1.05 }}
