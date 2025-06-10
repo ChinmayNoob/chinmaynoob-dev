@@ -134,7 +134,7 @@ export const projects: Project[] = [
     },
     {
         number: "05",
-        title: "Urahara&apos;s Kitchen",
+        title: "Urahara's Kitchen",
         introDescription: "A fully responsive and dynamic website for a restaurant",
         description: (
             <>
