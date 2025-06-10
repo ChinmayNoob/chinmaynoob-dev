@@ -4,29 +4,16 @@ import {
     SiReact,
     SiNextdotjs,
     SiTypescript,
-    SiNodedotjs,
-    SiMongodb,
-    SiPostgresql,
     SiTailwindcss,
-    SiStripe,
-    SiSocketdotio,
-    SiVuedotjs,
-    SiPython,
     SiFramer,
-    SiSanity,
     SiGreensock,
-    SiCss3,
-    SiD3Dotjs,
-    SiFastapi,
-    SiChartdotjs,
-    SiMui,
     SiShadcnui,
     SiGoogledisplayandvideo360,
     SiClerk,
     SiSupabase,
     SiReactquery
 } from "react-icons/si"
-import { TbBrandFramerMotion, TbBrandThreejs } from "react-icons/tb";
+import { TbBrandThreejs } from "react-icons/tb";
 
 export type Project = {
     number: string
@@ -101,7 +88,7 @@ export const projects: Project[] = [
                 A full-stack note taking website built using NextJS, Tanstack-Query for state-management, Supabase for database and authentication,
                 Tailwind-CSS and ShadCN for styling, and Gemini-API for note-summarization. Features include user authentication with login, register,
                 and logout using email/password or Google OAuth, comprehensive notes CRUD operations with rich text formatting, AI-powered summary
-                generation using Google's Gemini-API, auto-save and real-time summarization capabilities, and a responsive UI built with modern,
+                generation using Google&apos;s Gemini-API, auto-save and real-time summarization capabilities, and a responsive UI built with modern,
                 accessible design principles.
             </>
         ),
@@ -147,12 +134,12 @@ export const projects: Project[] = [
     },
     {
         number: "05",
-        title: "Urahara's Kitchen",
+        title: "Urahara&apos;s Kitchen",
         introDescription: "A fully responsive and dynamic website for a restaurant",
         description: (
             <>
                 Developed a comprehensive restaurant menu and website for a client using Next.js, Tailwind CSS, ShadCN UI, and Framer Motion.
-                Created an intuitive, visually appealing interface showcasing the restaurant's menu, ambiance, and dining experience with smooth
+                Created an intuitive, visually appealing interface showcasing the restaurant&apos;s menu, ambiance, and dining experience with smooth
                 animations and interactive elements. Implemented mobile-responsive design ensuring seamless functionality across all devices.
                 Integrated online ordering system, reservation management, and location details to enhance customer engagement. The website
                 contributed to a 25% increase in sales by improving online presence and streamlining the customer ordering process.
@@ -174,14 +161,14 @@ export const projects: Project[] = [
     {
         number: "06",
         title: "Wesleys Theory",
-        introDescription: "A landing page dedicated to Kendrick Lamar's intro song",
+        introDescription: "A landing page dedicated to Kendrick Lamar&apos;s intro song",
         description: (
             <>
-                Created a stunning landing page dedicated to Kendrick Lamar's intro song "Wesley's Theory" from the critically acclaimed album
-                "To Pimp a Butterfly". Built using React, TypeScript, and Sass with advanced animations powered by Framer Motion, Three.js, and GSAP.
+                Created a stunning landing page dedicated to Kendrick Lamar&apos;s intro song &quot;Wesley&apos;s Theory&quot; from the critically acclaimed album
+                &quot;To Pimp a Butterfly&quot;. Built using React, TypeScript, and Sass with advanced animations powered by Framer Motion, Three.js, and GSAP.
                 Implemented immersive 3D elements, parallax gallery effects, and horizontal gallery navigation that capture the essence and rhythm of the song.
                 Features interactive visual components, smooth scrolling experiences, responsive design, and seamless user experience that pays homage to the
-                artistic depth of Kendrick's music. Combined cutting-edge web technologies to create an engaging multimedia tribute.
+                artistic depth of Kendrick&apos;s music. Combined cutting-edge web technologies to create an engaging multimedia tribute.
             </>
         ),
         image: "/assets/projects/kendrick.jpg",
@@ -196,33 +183,7 @@ export const projects: Project[] = [
         ],
         href: "https://wesleys-theory.vercel.app/",
         status: "completed"
-    },
-    {
-        number: "07",
-        title: "Urahara's Kitchen",
-        introDescription: "A fully responsive and dynamic website for a restaurant",
-        description: (
-            <>
-                Developed a comprehensive restaurant menu and website for a client using Next.js, Tailwind CSS, ShadCN UI, and Framer Motion.
-                Created an intuitive, visually appealing interface showcasing the restaurant's menu, ambiance, and dining experience with smooth
-                animations and interactive elements. Implemented mobile-responsive design ensuring seamless functionality across all devices.
-                Integrated online ordering system, reservation management, and location details to enhance customer engagement. The website
-                contributed to a 25% increase in sales by improving online presence and streamlining the customer ordering process.
-            </>
-        ),
-        image: "/assets/projects/urahara.png",
-        skills: ["Next.js", "TypeScript", "Tailwind CSS", "ShadCN UI", "Framer Motion"],
-        icons: [
-            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
-            <SiTypescript key="typescript" className="text-blue-600" />,
-            <SiTailwindcss key="tailwind" className="text-cyan-500" />,
-            <SiShadcnui key="shadcn" className="text-white" />,
-            <SiFramer key="motion" className="text-black dark:text-white" />
-        ],
-        href: "https://resturant-menu-eta.vercel.app/",
-        github: "https://github.com/ChinmayNoob/resturant-menu",
-        status: "completed"
-    },
+    }
 
 
 ] 
