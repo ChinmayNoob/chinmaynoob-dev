@@ -10,22 +10,22 @@ export default function Socials() {
         },
         {
             name: "LinkedIn",
-            href: "https://linkedin.com/in/chinmay", // Update with actual LinkedIn URL
+            href: "https://www.linkedin.com/in/chinmay-sawant0408/", // Update with actual LinkedIn URL
             label: "/linkedin"
         },
         {
             name: "GitHub",
-            href: "https://github.com/chinmay", // Update with actual GitHub URL
+            href: "https://github.com/ChinmayNoob", // Update with actual GitHub URL
             label: "/github"
         },
         {
             name: "Twitter",
-            href: "https://twitter.com/chinmay", // Update with actual Twitter URL
+            href: "https://x.com/Chinmay0408", // Update with actual Twitter URL
             label: "/twitter"
         },
         {
             name: "Codeforces",
-            href: "https://codeforces.com/profile/chinmay", // Update with actual Codeforces URL
+            href: "https://codeforces.com/profile/Chinmay04AUG_", // Update with actual Codeforces URL
             label: "/codeforces"
         }
     ]
