@@ -5,8 +5,8 @@ export default function Socials() {
     const socials = [
         {
             name: "Email",
-            href: "mailto:chinmaypvt04@gmail.com",
-            label: "chinmaypvt04@gmail.com"
+            href: "mailto:chinmay.sawant4804@gmail.com",
+            label: "chinmay.sawant4804@gmail.com"
         },
         {
             name: "LinkedIn",

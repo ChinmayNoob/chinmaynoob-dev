@@ -22,7 +22,7 @@ export default function Home() {
         <Text>
           Reach out to me at{" "}
           <Link href="mailto:chinmaypvt04@gmail.com" className="underline">
-            chinmaypvt04@gmail.com
+            chinmay.sawant4804@gmail.com
           </Link>
         </Text>
       </section>
