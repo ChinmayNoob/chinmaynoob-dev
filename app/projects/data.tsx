@@ -42,7 +42,7 @@ export const projects: Project[] = [
                 leading to a 40% reduction in navigation time and increased efficiency.
             </>
         ),
-        image: "/assets/projects/jhoom.png",
+        image: "/assets/projects/jhoom.webp",
         skills: ["Next.js", "TypeScript", "Tailwind CSS", "ShadCN UI", "Stream SDK", "Clerk"],
         icons: [
             <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
@@ -68,7 +68,7 @@ export const projects: Project[] = [
                 patterns including micro-interactions, dynamic layouts, and accessibility standards for enhanced user engagement.
             </>
         ),
-        image: "/assets/projects/t3xture.png",
+        image: "/assets/projects/t3xture.webp",
         skills: ["Next.js", "TypeScript", "Tailwind CSS", "Motion"],
         icons: [
             <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
@@ -92,7 +92,7 @@ export const projects: Project[] = [
                 accessible design principles.
             </>
         ),
-        image: "/assets/projects/crollo.png",
+        image: "/assets/projects/crollo.webp",
         skills: ["Next.js", "Tailwind CSS", "TypeScript", "ShadCN UI", "Tanstack Query", "Supabase"],
         icons: [
             <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
@@ -119,7 +119,7 @@ export const projects: Project[] = [
                 across all devices. Optimized for performance with efficient audio streaming and responsive design principles.
             </>
         ),
-        image: "/assets/projects/808s.png",
+        image: "/assets/projects/808s.webp",
         skills: ["Next.js", "TypeScript", "Tailwind CSS", "ShadCN UI", "Framer Motion"],
         icons: [
             <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
@@ -145,7 +145,7 @@ export const projects: Project[] = [
                 contributed to a 25% increase in sales by improving online presence and streamlining the customer ordering process.
             </>
         ),
-        image: "/assets/projects/urahara.png",
+        image: "/assets/projects/urahara.webp",
         skills: ["Next.js", "TypeScript", "Tailwind CSS", "ShadCN UI", "Framer Motion"],
         icons: [
             <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
@@ -171,7 +171,7 @@ export const projects: Project[] = [
                 artistic depth of Kendrick&apos;s music. Combined cutting-edge web technologies to create an engaging multimedia tribute.
             </>
         ),
-        image: "/assets/projects/kendrick.jpg",
+        image: "/assets/projects/kendrick.webp",
         skills: ["React", "TypeScript", "Sass", "Framer Motion", "Three.js", "GSAP"],
         icons: [
             <SiReact key="react" className="text-blue-500" />,

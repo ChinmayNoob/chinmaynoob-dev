@@ -136,7 +136,7 @@ export function ProjectCard({ project, isExpanded, onToggle, ...props }: Project
                                     src={project.image}
                                     alt={project.title}
                                     fill
-                                    className="object-cover transition-transform duration-300"
+                                    className="object-contain transition-transform duration-300"
                                 />
 
                                 <AnimatePresence>
