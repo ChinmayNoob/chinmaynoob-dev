@@ -2,7 +2,7 @@ import { Heading } from "@/components/heading"
 import Link from "next/link"
 
 export default function Resume() {
-    const fileId = "1Fk2793No57TeELE_G4QeBRb98Yd8wfzN"
+    const fileId = "1XYfqXH4EtnRx7iZFh1orBWEWJetq1CiR"
     const embedUrl = `https://drive.google.com/file/d/${fileId}/preview`
     const viewUrl = `https://drive.google.com/file/d/${fileId}/view`
     const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`

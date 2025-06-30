@@ -183,6 +183,27 @@ export const projects: Project[] = [
         ],
         href: "https://wesleys-theory.vercel.app/",
         status: "completed"
+    },
+    {
+        number: "07",
+        title: "BoxBox - A F1 Concept",
+        introDescription: "2025 F1 Season Details",
+        description: (
+            <>
+                Developed a comprehensive Formula 1 website for F1 enthusiasts featuring the complete 2025 season with Grand Prix details, live race results,
+                and driver/constructor standings. Built with Next.js, TypeScript, and Framer Motion for smooth animations. Includes interactive data
+                visualizations, dynamic filtering, real-time updates, and responsive design optimized for all devices.
+            </>
+        ),
+        image: "/assets/projects/boxbox.webp",
+        skills: ["Next.js", "Framer Motion", "TypeScript"],
+        icons: [
+            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
+            <SiFramer key="framer" className="text-black dark:text-white" />,
+            <SiTypescript key="typescript" className="text-blue-600" />
+        ],
+        href: "https://boxboxf1.vercel.app/",
+        status: "completed"
     }
 
 
