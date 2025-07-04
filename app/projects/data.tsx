@@ -148,7 +148,7 @@ export const projects: Project[] = [
         introDescription: "A landing page dedicated to Kendrick Lamar&apos;s intro song",
         description: (
             <>
-                Designed a landing page tribute to Kendrick Lamar's "Wesley's Theory" using React, TypeScript, Framer Motion, Three.js, and GSAP. Features immersive 3D elements, parallax effects, and smooth animations.
+                Designed a landing page tribute to Kendrick Lamar&apos;s &quot;Wesley&apos;s Theory&quot; using React, TypeScript, Framer Motion, Three.js, and GSAP. Features immersive 3D elements, parallax effects, and smooth animations.
             </>
         ),
         image: "/assets/projects/kendrick.webp",
