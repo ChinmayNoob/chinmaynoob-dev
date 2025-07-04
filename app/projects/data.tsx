@@ -11,7 +11,10 @@ import {
     SiGoogledisplayandvideo360,
     SiClerk,
     SiSupabase,
-    SiReactquery
+    SiReactquery,
+    SiDrizzle,
+    SiZincsearch,
+    SiNpm
 } from "react-icons/si"
 import { TbBrandThreejs } from "react-icons/tb";
 
@@ -35,11 +38,7 @@ export const projects: Project[] = [
         introDescription: "A web-based video conferencing platform",
         description: (
             <>
-                Built a web-based video conferencing platform using Next.js, Tailwind CSS, ShadCN UI, and Stream SDK, enabling
-                users to create, join, and record conference calls. Integrated Clerk for authentication to manage user sessions securely.
-                Elevated user experience by implementing features like customizable grid layouts, attendee monitoring, and admin
-                controls, improving user satisfaction by 30%. Organized meetings into upcoming, previous, and recorded categories,
-                leading to a 40% reduction in navigation time and increased efficiency.
+                Built a web-based video conferencing platform with Next.js, Tailwind CSS, ShadCN UI, and Stream SDK. Features secure authentication, customizable layouts, attendee monitoring, admin controls, and organized meeting management for a fast and efficient user experience.
             </>
         ),
         image: "/assets/projects/jhoom.webp",
@@ -62,10 +61,7 @@ export const projects: Project[] = [
         introDescription: "A fully responsive and dynamic website for an agency ",
         description: (
             <>
-                Created a fully responsive website following modern design principles and current web trends using Next.js and Framer Motion.
-                Implemented smooth animations, interactive elements, and optimized performance for all devices. Designed with mobile-first
-                approach ensuring seamless user experience across desktop, tablet, and mobile platforms. Applied contemporary UI/UX
-                patterns including micro-interactions, dynamic layouts, and accessibility standards for enhanced user engagement.
+                Built a fully responsive agency website with Next.js and Framer Motion, featuring smooth animations, interactive elements, and a mobile-first design for seamless user experience across all devices.
             </>
         ),
         image: "/assets/projects/t3xture.webp",
@@ -85,11 +81,7 @@ export const projects: Project[] = [
         introDescription: "A full stack note taking app",
         description: (
             <>
-                A full-stack note taking website built using NextJS, Tanstack-Query for state-management, Supabase for database and authentication,
-                Tailwind-CSS and ShadCN for styling, and Gemini-API for note-summarization. Features include user authentication with login, register,
-                and logout using email/password or Google OAuth, comprehensive notes CRUD operations with rich text formatting, AI-powered summary
-                generation using Google&apos;s Gemini-API, auto-save and real-time summarization capabilities, and a responsive UI built with modern,
-                accessible design principles.
+                Developed a full-stack note-taking app with Next.js, Supabase, Tanstack Query, and Gemini-API for AI-powered summaries. Features authentication, rich text editing, auto-save, and a modern, responsive UI.
             </>
         ),
         image: "/assets/projects/crollo.webp",
@@ -112,11 +104,7 @@ export const projects: Project[] = [
         introDescription: "A minimalistic music player",
         description: (
             <>
-                Built a minimalistic web-based music player designed to play your favorite songs with a clean, intuitive interface.
-                Integrated comprehensive music functionality including play, pause, skip, volume control, and playlist management.
-                Implemented advanced features like real-time lyrics display, track visualization, and smooth animations using Framer Motion.
-                Designed with a mobile-first approach using Tailwind CSS and ShadCN UI components for a seamless user experience
-                across all devices. Optimized for performance with efficient audio streaming and responsive design principles.
+                Created a minimalistic music player with Next.js, Tailwind CSS, and Framer Motion. Includes playlist management, real-time lyrics, track visualization, and a mobile-first, responsive design.
             </>
         ),
         image: "/assets/projects/808s.webp",
@@ -138,11 +126,7 @@ export const projects: Project[] = [
         introDescription: "A fully responsive and dynamic website for a restaurant",
         description: (
             <>
-                Developed a comprehensive restaurant menu and website for a client using Next.js, Tailwind CSS, ShadCN UI, and Framer Motion.
-                Created an intuitive, visually appealing interface showcasing the restaurant&apos;s menu, ambiance, and dining experience with smooth
-                animations and interactive elements. Implemented mobile-responsive design ensuring seamless functionality across all devices.
-                Integrated online ordering system, reservation management, and location details to enhance customer engagement. The website
-                contributed to a 25% increase in sales by improving online presence and streamlining the customer ordering process.
+                Built a dynamic restaurant website with Next.js, Tailwind CSS, and Framer Motion. Features menu showcase, online ordering, reservations, and a mobile-friendly, animated interface.
             </>
         ),
         image: "/assets/projects/urahara.webp",
@@ -164,11 +148,7 @@ export const projects: Project[] = [
         introDescription: "A landing page dedicated to Kendrick Lamar&apos;s intro song",
         description: (
             <>
-                Created a stunning landing page dedicated to Kendrick Lamar&apos;s intro song &quot;Wesley&apos;s Theory&quot; from the critically acclaimed album
-                &quot;To Pimp a Butterfly&quot;. Built using React, TypeScript, and Sass with advanced animations powered by Framer Motion, Three.js, and GSAP.
-                Implemented immersive 3D elements, parallax gallery effects, and horizontal gallery navigation that capture the essence and rhythm of the song.
-                Features interactive visual components, smooth scrolling experiences, responsive design, and seamless user experience that pays homage to the
-                artistic depth of Kendrick&apos;s music. Combined cutting-edge web technologies to create an engaging multimedia tribute.
+                Designed a landing page tribute to Kendrick Lamar's "Wesley's Theory" using React, TypeScript, Framer Motion, Three.js, and GSAP. Features immersive 3D elements, parallax effects, and smooth animations.
             </>
         ),
         image: "/assets/projects/kendrick.webp",
@@ -203,6 +183,105 @@ export const projects: Project[] = [
             <SiTypescript key="typescript" className="text-blue-600" />
         ],
         href: "https://boxboxf1.vercel.app/",
+        status: "completed"
+    },
+    {
+        number: "08",
+        title: "Faker-ind",
+        introDescription: "A comprehensive npm package for generating fake data for Indian users",
+        description: (
+            <>
+                Developed a robust fake data generator for Indian users, supporting 11 major Indian languages. Faker-ind lets developers easily generate realistic Indian names, phone numbers, bank details, and placeholder text with multi-language support and dynamic locale switching. Ideal for creating localized apps, testing, and prototyping with authentic Indian data.
+            </>
+        ),
+        image: "/assets/projects/faker-ind.webp",
+        skills: ["TypeScript", "NPM Package", "Localization", "Open Source"],
+        icons: [
+            <SiTypescript key="typescript" className="text-blue-600" />,
+            <SiNpm key="npm" className="text-red-500" />
+        ],
+        href: "https://www.npmjs.com/package/@chinmayn00b/faker-ind",
+        github: "https://github.com/ChinmayNoob/faker-ind",
+        status: "completed"
+    },
+    {
+        number: "09",
+        title: "Laughtale-A One Piece Game",
+        introDescription: "One Piece-themed Monopoly board game with animated landing and character reveals.",
+        description: (
+            <>
+                Created an interactive, One Piece-themed board game featuring an animated landing page and scroll-triggered character reveals. Developed a Monopoly-like board with card-based mechanics and smooth visual transitions to maximize user engagement. Engineered the core game logic using Zustand for global state management, leveraging centralized state and derived values to efficiently handle player movement and game flow. Achieved a 40% increase in response time through selective updates, and implemented a decoupled event system to enable seamless UI animations and modular component interactions.
+            </>
+        ),
+        image: "/assets/projects/laughtale.webp",
+        skills: ["Next.js", "Framer Motion", "TypeScript", "Zustand"],
+        icons: [
+            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
+            <SiFramer key="framer" className="text-black dark:text-white" />,
+            <SiTypescript key="typescript" className="text-blue-600" />,
+            <SiZincsearch key="zustand" className="text-green-500" />
+        ],
+        href: "https://boxboxf1.vercel.app/",
+        status: "completed"
+    },
+    {
+        number: "10",
+        title: "Tuff - A Questionnaire Platform",
+        introDescription: "A platform for coders to ask and solve DSA related questions and queries",
+        description: (
+            <>
+                Developed a questionnaire platform for coders to ask and solve DSA related questions and queries.Built using Nextjs,Tanstack Query,Drizzle ORM,ShadnCN,Tailwind CSS
+
+            </>
+        ),
+        image: "/assets/projects/tuff.webp",
+        skills: ["Next.js", "Tanstack Query", "Drizzle ORM", "ShadnCN", "Tailwind CSS"],
+        icons: [
+            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
+            <SiReactquery key="tanstack" className="text-red-500" />,
+            <SiDrizzle key="drizzle" className="text-green-500" />,
+            <SiShadcnui key="shadcn" className="text-white" />,
+            <SiTailwindcss key="tailwind" className="text-cyan-500" />
+        ],
+        href: "https://boxboxf1.vercel.app/",
+        status: "completed"
+    },
+    {
+        number: "11",
+        title: "Omen",
+        introDescription: "An Effective Pomodoro Timer",
+        description: (
+            <>
+                Built this Pomodoro Timer on weekend nights, customize your timings, break sessions are also provided and onepiece and naruto themed white noise are also present.
+            </>
+        ),
+        image: "/assets/projects/omen.webp",
+        skills: ["Next.js", "Framer Motion", "TypeScript"],
+        icons: [
+            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
+            <SiFramer key="framer" className="text-black dark:text-white" />,
+            <SiTypescript key="typescript" className="text-blue-600" />
+        ],
+        href: "https://omen-eta.vercel.app/",
+        status: "completed"
+    },
+    {
+        number: "12",
+        title: "Lamo",
+        introDescription: "Meme Generator",
+        description: (
+            <>
+                Generated memes edit them ,download memes and share them with your friends.
+            </>
+        ),
+        image: "/assets/projects/lamo.webp",
+        skills: ["Next.js", "Framer Motion", "TypeScript"],
+        icons: [
+            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
+            <SiFramer key="framer" className="text-black dark:text-white" />,
+            <SiTypescript key="typescript" className="text-blue-600" />
+        ],
+        href: "https://lamo-gold.vercel.app/",
         status: "completed"
     }
 
