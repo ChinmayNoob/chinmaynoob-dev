@@ -34,29 +34,68 @@ export type Project = {
 export const projects: Project[] = [
     {
         number: "01",
-        title: "Jhoom",
-        introDescription: "A web-based video conferencing platform",
+        title: "Tuff - A Questionnaire Platform",
+        introDescription: "A platform for coders to ask and solve DSA related questions and queries",
         description: (
             <>
-                Built a web-based video conferencing platform with Next.js, Tailwind CSS, ShadCN UI, and Stream SDK. Features secure authentication, customizable layouts, attendee monitoring, admin controls, and organized meeting management for a fast and efficient user experience.
+                Developed a questionnaire platform for coders to ask and solve DSA related questions and queries.Built using Nextjs,Tanstack Query,Drizzle ORM,ShadnCN,Tailwind CSS
             </>
         ),
-        image: "/assets/projects/jhoom.webp",
-        skills: ["Next.js", "TypeScript", "Tailwind CSS", "ShadCN UI", "Stream SDK", "Clerk"],
+        image: "/assets/projects/tuff.webp",
+        skills: ["Next.js", "Tanstack Query", "Drizzle ORM", "ShadnCN", "Tailwind CSS"],
         icons: [
             <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
-            <SiTypescript key="typescript" className="text-blue-600" />,
-            <SiTailwindcss key="tailwind" className="text-cyan-500" />,
+            <SiReactquery key="tanstack" className="text-red-500" />,
+            <SiDrizzle key="drizzle" className="text-green-500" />,
             <SiShadcnui key="shadcn" className="text-white" />,
-            <SiGoogledisplayandvideo360 key="stream" className="text-blue-700" />,
-            <SiClerk key="clerk" className="text-purple-600" />
+            <SiTailwindcss key="tailwind" className="text-cyan-500" />
         ],
-        href: "https://videoconferenceapp.vercel.app/",
-        github: "https://github.com/ChinmayNoob/videoconferenceapp",
+        href: "https://tuff-six.vercel.app/",
+        github: "https://github.com/ChinmayNoob/tuff",
         status: "completed"
     },
     {
         number: "02",
+        title: "Faker-ind",
+        introDescription: "A comprehensive npm package for generating fake data for Indian users",
+        description: (
+            <>
+                Developed a robust fake data generator for Indian users, supporting 11 major Indian languages. Faker-ind lets developers easily generate realistic Indian names, phone numbers, bank details, and placeholder text with multi-language support and dynamic locale switching. Ideal for creating localized apps, testing, and prototyping with authentic Indian data.
+            </>
+        ),
+        image: "/assets/projects/faker-ind.webp",
+        skills: ["TypeScript", "NPM Package", "Localization", "Open Source"],
+        icons: [
+            <SiTypescript key="typescript" className="text-blue-600" />,
+            <SiNpm key="npm" className="text-red-500" />
+        ],
+        href: "https://www.npmjs.com/package/@chinmayn00b/faker-ind",
+        github: "https://github.com/ChinmayNoob/faker-ind",
+        status: "completed"
+    },
+    {
+        number: "03",
+        title: "Laughtale-A One Piece Game",
+        introDescription: "One Piece-themed Monopoly board game with animated landing and character reveals.",
+        description: (
+            <>
+                Created an interactive, One Piece-themed board game featuring an animated landing page and scroll-triggered character reveals. Developed a Monopoly-like board with card-based mechanics and smooth visual transitions to maximize user engagement. Engineered the core game logic using Zustand for global state management, leveraging centralized state and derived values to efficiently handle player movement and game flow. Achieved a 40% increase in response time through selective updates, and implemented a decoupled event system to enable seamless UI animations and modular component interactions.
+            </>
+        ),
+        image: "/assets/projects/laughtale.webp",
+        skills: ["Next.js", "Framer Motion", "TypeScript", "Zustand"],
+        icons: [
+            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
+            <SiFramer key="framer" className="text-black dark:text-white" />,
+            <SiTypescript key="typescript" className="text-blue-600" />,
+            <SiZincsearch key="zustand" className="text-green-500" />
+        ],
+        href: "https://laughtaleop.vercel.app/",
+        github: "https://github.com/ChinmayNoob/laughtale",
+        status: "completed"
+    },
+    {
+        number: "04",
         title: "T3XTURE",
         introDescription: "A fully responsive and dynamic website for an agency ",
         description: (
@@ -73,10 +112,53 @@ export const projects: Project[] = [
             <SiFramer key="motion" className="text-green-500" />,
         ],
         href: "https://t3xture.vercel.app/",
+        github: "https://github.com/ChinmayNoob/t3xture",
         status: "completed"
     },
     {
-        number: "03",
+        number: "05",
+        title: "Lamo",
+        introDescription: "Meme Generator",
+        description: (
+            <>
+                Generated memes edit them ,download memes and share them with your friends.
+            </>
+        ),
+        image: "/assets/projects/lamo.webp",
+        skills: ["Next.js", "Framer Motion", "TypeScript"],
+        icons: [
+            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
+            <SiFramer key="framer" className="text-black dark:text-white" />,
+            <SiTypescript key="typescript" className="text-blue-600" />
+        ],
+        href: "https://lamo-gold.vercel.app/",
+        github: "https://github.com/ChinmayNoob/lamo",
+        status: "completed"
+    },
+    {
+        number: "06",
+        title: "BoxBox - A F1 Concept",
+        introDescription: "2025 F1 Season Details",
+        description: (
+            <>
+                Developed a comprehensive Formula 1 website for F1 enthusiasts featuring the complete 2025 season with Grand Prix details, live race results,
+                and driver/constructor standings. Built with Next.js, TypeScript, and Framer Motion for smooth animations. Includes interactive data
+                visualizations, dynamic filtering, real-time updates, and responsive design optimized for all devices.
+            </>
+        ),
+        image: "/assets/projects/boxbox.webp",
+        skills: ["Next.js", "Framer Motion", "TypeScript"],
+        icons: [
+            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
+            <SiFramer key="framer" className="text-black dark:text-white" />,
+            <SiTypescript key="typescript" className="text-blue-600" />
+        ],
+        href: "https://boxboxf1.vercel.app/",
+        github: "https://github.com/ChinmayNoob/boxbox",
+        status: "completed"
+    },
+    {
+        number: "07",
         title: "Crollo",
         introDescription: "A full stack note taking app",
         description: (
@@ -99,7 +181,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "04",
+        number: "08",
         title: "808s",
         introDescription: "A minimalistic music player",
         description: (
@@ -121,7 +203,30 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "05",
+        number: "09",
+        title: "Jhoom",
+        introDescription: "A web-based video conferencing platform",
+        description: (
+            <>
+                Built a web-based video conferencing platform with Next.js, Tailwind CSS, ShadCN UI, and Stream SDK. Features secure authentication, customizable layouts, attendee monitoring, admin controls, and organized meeting management for a fast and efficient user experience.
+            </>
+        ),
+        image: "/assets/projects/jhoom.webp",
+        skills: ["Next.js", "TypeScript", "Tailwind CSS", "ShadCN UI", "Stream SDK", "Clerk"],
+        icons: [
+            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
+            <SiTypescript key="typescript" className="text-blue-600" />,
+            <SiTailwindcss key="tailwind" className="text-cyan-500" />,
+            <SiShadcnui key="shadcn" className="text-white" />,
+            <SiGoogledisplayandvideo360 key="stream" className="text-blue-700" />,
+            <SiClerk key="clerk" className="text-purple-600" />
+        ],
+        href: "https://videoconferenceapp.vercel.app/",
+        github: "https://github.com/ChinmayNoob/videoconferenceapp",
+        status: "completed"
+    },
+    {
+        number: "10",
         title: "Urahara's Kitchen",
         introDescription: "A fully responsive and dynamic website for a restaurant",
         description: (
@@ -143,7 +248,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "06",
+        number: "11",
         title: "Wesleys Theory",
         introDescription: "A landing page dedicated to Kendrick Lamar&apos;s intro song",
         description: (
@@ -162,92 +267,11 @@ export const projects: Project[] = [
             <SiGreensock key="gsap" className="text-green-600" />
         ],
         href: "https://wesleys-theory.vercel.app/",
+        github: "https://github.com/ChinmayNoob/wesleys-theory",
         status: "completed"
     },
     {
-        number: "07",
-        title: "BoxBox - A F1 Concept",
-        introDescription: "2025 F1 Season Details",
-        description: (
-            <>
-                Developed a comprehensive Formula 1 website for F1 enthusiasts featuring the complete 2025 season with Grand Prix details, live race results,
-                and driver/constructor standings. Built with Next.js, TypeScript, and Framer Motion for smooth animations. Includes interactive data
-                visualizations, dynamic filtering, real-time updates, and responsive design optimized for all devices.
-            </>
-        ),
-        image: "/assets/projects/boxbox.webp",
-        skills: ["Next.js", "Framer Motion", "TypeScript"],
-        icons: [
-            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
-            <SiFramer key="framer" className="text-black dark:text-white" />,
-            <SiTypescript key="typescript" className="text-blue-600" />
-        ],
-        href: "https://boxboxf1.vercel.app/",
-        status: "completed"
-    },
-    {
-        number: "08",
-        title: "Faker-ind",
-        introDescription: "A comprehensive npm package for generating fake data for Indian users",
-        description: (
-            <>
-                Developed a robust fake data generator for Indian users, supporting 11 major Indian languages. Faker-ind lets developers easily generate realistic Indian names, phone numbers, bank details, and placeholder text with multi-language support and dynamic locale switching. Ideal for creating localized apps, testing, and prototyping with authentic Indian data.
-            </>
-        ),
-        image: "/assets/projects/faker-ind.webp",
-        skills: ["TypeScript", "NPM Package", "Localization", "Open Source"],
-        icons: [
-            <SiTypescript key="typescript" className="text-blue-600" />,
-            <SiNpm key="npm" className="text-red-500" />
-        ],
-        href: "https://www.npmjs.com/package/@chinmayn00b/faker-ind",
-        github: "https://github.com/ChinmayNoob/faker-ind",
-        status: "completed"
-    },
-    {
-        number: "09",
-        title: "Laughtale-A One Piece Game",
-        introDescription: "One Piece-themed Monopoly board game with animated landing and character reveals.",
-        description: (
-            <>
-                Created an interactive, One Piece-themed board game featuring an animated landing page and scroll-triggered character reveals. Developed a Monopoly-like board with card-based mechanics and smooth visual transitions to maximize user engagement. Engineered the core game logic using Zustand for global state management, leveraging centralized state and derived values to efficiently handle player movement and game flow. Achieved a 40% increase in response time through selective updates, and implemented a decoupled event system to enable seamless UI animations and modular component interactions.
-            </>
-        ),
-        image: "/assets/projects/laughtale.webp",
-        skills: ["Next.js", "Framer Motion", "TypeScript", "Zustand"],
-        icons: [
-            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
-            <SiFramer key="framer" className="text-black dark:text-white" />,
-            <SiTypescript key="typescript" className="text-blue-600" />,
-            <SiZincsearch key="zustand" className="text-green-500" />
-        ],
-        href: "https://boxboxf1.vercel.app/",
-        status: "completed"
-    },
-    {
-        number: "10",
-        title: "Tuff - A Questionnaire Platform",
-        introDescription: "A platform for coders to ask and solve DSA related questions and queries",
-        description: (
-            <>
-                Developed a questionnaire platform for coders to ask and solve DSA related questions and queries.Built using Nextjs,Tanstack Query,Drizzle ORM,ShadnCN,Tailwind CSS
-
-            </>
-        ),
-        image: "/assets/projects/tuff.webp",
-        skills: ["Next.js", "Tanstack Query", "Drizzle ORM", "ShadnCN", "Tailwind CSS"],
-        icons: [
-            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
-            <SiReactquery key="tanstack" className="text-red-500" />,
-            <SiDrizzle key="drizzle" className="text-green-500" />,
-            <SiShadcnui key="shadcn" className="text-white" />,
-            <SiTailwindcss key="tailwind" className="text-cyan-500" />
-        ],
-        href: "https://boxboxf1.vercel.app/",
-        status: "completed"
-    },
-    {
-        number: "11",
+        number: "12",
         title: "Omen",
         introDescription: "An Effective Pomodoro Timer",
         description: (
@@ -263,27 +287,7 @@ export const projects: Project[] = [
             <SiTypescript key="typescript" className="text-blue-600" />
         ],
         href: "https://omen-eta.vercel.app/",
+        github: "https://github.com/ChinmayNoob/omen",
         status: "completed"
     },
-    {
-        number: "12",
-        title: "Lamo",
-        introDescription: "Meme Generator",
-        description: (
-            <>
-                Generated memes edit them ,download memes and share them with your friends.
-            </>
-        ),
-        image: "/assets/projects/lamo.webp",
-        skills: ["Next.js", "Framer Motion", "TypeScript"],
-        icons: [
-            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
-            <SiFramer key="framer" className="text-black dark:text-white" />,
-            <SiTypescript key="typescript" className="text-blue-600" />
-        ],
-        href: "https://lamo-gold.vercel.app/",
-        status: "completed"
-    }
-
-
 ] 
