@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Epilogue } from "next/font/google";
+import { Epilogue, Pacifico } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Header } from "@/components/layouts/header";
 import { Footer } from "@/components/layouts/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const epilogue = Epilogue({ subsets: ["latin"] })
-
+const epilogue = Epilogue({ subsets: ["latin"], variable: "--font-sans" });
+const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"], variable: "--font-pacifico" });
 
 export const metadata: Metadata = {
   title: "Chinmay | Full-Stack Developer",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Chinmay | Full-Stack Developer",
     description: "I'm a full-stack developer from India, open for freelance and full-stack development roles. My primary tech stack includes Next.js, TypeScript, Motion, and Drizzle.",
-    url: "https://chinmaynoob-porfolio-v1.vercel.app/",
+    url: "https://chinmaynoob.vercel.app/",
     siteName: "Chinmay Portfolio",
     images: [
       {
@@ -65,7 +65,8 @@ export default function RootLayout({
       <body
         className={cn(
           "bg-neutral-100 text-neutral-700 dark:bg-neutral-950 dark:text-neutral-300",
-          epilogue.className,
+          epilogue.variable,
+          pacifico.variable
         )}
       >
         <ThemeProvider

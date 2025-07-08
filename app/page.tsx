@@ -1,30 +1,38 @@
+import BlurFade from "@/components/blur-fade"
 import { Cards } from "@/components/cards"
-import { Heading } from "@/components/heading"
-import { Text } from "@/components/text"
-import Link from "next/link"
+import { CommandPalette } from "@/components/command-pallete"
+import TextEffectWithExit from "@/components/headline"
+import { Motion } from "@/components/motion"
+
+
+const BLUR_FADE_DELAY = 0.04;
+
 
 export default function Home() {
   return (
     <section>
-      <Heading>Hi, I&apos;m Chinmay ✌️</Heading>
+      <Motion>
+        <div className="flex-col flex flex-1 justify-center items-center space-y-1.5">
+          <BlurFade
+            delay={BLUR_FADE_DELAY}
+            className="text-3xl tracking-tighter sm:text-5xl xl:text-6xl/none flex items-center gap-3"
+          >
+            <div className="font-serif italic main-text-in">
+              <TextEffectWithExit />
+            </div>
+          </BlurFade>
+        </div>
+      </Motion>
 
       <section className="prose prose-neutral mt-8 max-w-full dark:prose-invert">
-        <Text>
-          I&apos;m a full-stack developer from India, open for freelance and
-          full-stack development roles. My primary tech stack includes Next.js,
-          TypeScript, Motion, and Drizzle. Check out my{" "}
-          <Link href={"/projects"}>
-            <span className="text-neutral-400">/</span>projects
-          </Link>{" "}
-          to see what I&apos;ve been working on.
-        </Text>
-
-        <Text>
-          Reach out to me at{" "}
-          <Link href="mailto:chinmaypvt04@gmail.com" className="underline">
-            chinmay.sawant4804@gmail.com
-          </Link>
-        </Text>
+        <Motion>
+          <p className="text-base font-normal leading-relaxed">
+            I&apos;m a <span className="font-bold text-black dark:text-white">full-stack developer</span> from India, having experience in working with various languages,frameworks and tools.
+          </p>
+        </Motion>
+        <Motion className="flex justify-center">
+          <CommandPalette />
+        </Motion>
       </section>
       <Cards />
 
