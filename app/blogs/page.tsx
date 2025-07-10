@@ -1,5 +1,11 @@
 import { Heading } from "@/components/heading"
 
+export const metadata = {
+    title: "Chinmay Sawant | Blogs",
+    description:
+        "Explore my blogs, showcasing my thoughts and ideas.",
+}
+
 export default function Blogs() {
 
     return (

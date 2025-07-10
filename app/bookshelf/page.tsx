@@ -1,6 +1,12 @@
 import { Heading } from "@/components/heading"
 
-export default function Socials() {
+export const metadata = {
+    title: "Chinmay Sawant | Bookshelf",
+    description:
+        "Explore my bookshelf, showcasing my reading habits and favorite books.",
+}
+
+export default function Bookshelf() {
     const books = [
         {
             name: "Notes from the Underground",

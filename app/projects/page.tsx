@@ -4,7 +4,7 @@ import { Heading } from "@/components/heading"
 import { defaultVariants } from "@/components/motion-variants"
 
 export const metadata = {
-    title: "Projects - Your Name",
+    title: "Chinmay Sawant | Projects",
     description:
         "Explore my portfolio of projects, showcasing my skills in web development, design, and more.",
 }
