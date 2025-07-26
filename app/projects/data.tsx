@@ -34,14 +34,14 @@ export type Project = {
 export const projects: Project[] = [
     {
         number: "01",
-        title: "Tuff - A Questionnaire Platform",
-        introDescription: "A platform for coders to ask and solve DSA related questions and queries",
+        title: "Loopin - A Questionnaire Platform",
+        introDescription: "A platform for coders to ask and solve questions and queries with community support",
         description: (
             <>
-                Developed a questionnaire platform for coders to ask and solve DSA related questions and queries.Built using Nextjs,Tanstack Query,Drizzle ORM,ShadnCN,Tailwind CSS
+                Developed a questionnaire platform for coders to ask and solve questions and queries having community supports.Built using Nextjs,Tanstack Query,Drizzle ORM,ShadnCN,Tailwind CSS
             </>
         ),
-        image: "/assets/projects/tuff.webp",
+        image: "/assets/projects/loopin.webp",
         skills: ["Next.js", "Tanstack Query", "Drizzle ORM", "ShadnCN", "Tailwind CSS"],
         icons: [
             <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
@@ -50,7 +50,7 @@ export const projects: Project[] = [
             <SiShadcnui key="shadcn" className="text-white" />,
             <SiTailwindcss key="tailwind" className="text-cyan-500" />
         ],
-        href: "https://tuff-six.vercel.app/",
+        href: "https://loop1n.vercel.app/",
         github: "https://github.com/ChinmayNoob/tuff",
         status: "completed"
     },
@@ -63,7 +63,7 @@ export const projects: Project[] = [
                 Developed a robust fake data generator for Indian users, supporting 11 major Indian languages. Faker-ind lets developers easily generate realistic Indian names, phone numbers, bank details, and placeholder text with multi-language support and dynamic locale switching. Ideal for creating localized apps, testing, and prototyping with authentic Indian data.
             </>
         ),
-        image: "/assets/projects/faker-ind.webp",
+        image: "/assets/projects/faker-ind.png",
         skills: ["TypeScript", "NPM Package", "Localization", "Open Source"],
         icons: [
             <SiTypescript key="typescript" className="text-blue-600" />,
