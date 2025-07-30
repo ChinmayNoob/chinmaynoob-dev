@@ -77,7 +77,7 @@ export function CommandPalette() {
                     window.open("https://codeforces.com/profile/Chinmay04AUG_", "_blank");
                 } else if (e.key === "r" || e.key === "R") {
                     e.preventDefault();
-                    window.open("https://drive.google.com/file/d/1XYfqXH4EtnRx7iZFh1orBWEWJetq1CiR/view?usp=drive_link", "_blank");
+                    window.open("https://drive.google.com/file/d/1k8S8axuCykVEqpUL407P8R1IiczRxUGN/view?usp=sharing", "_blank");
                 } else if (e.key === "g" || e.key === "G") {
                     const handleSecondKey = (e2: KeyboardEvent) => {
                         if (e2.key === "h" || e2.key === "H") {
@@ -201,7 +201,7 @@ export function CommandPalette() {
                 ),
                 label: "View Resume",
                 shortcut: "R",
-                href: "https://drive.google.com/file/d/1XYfqXH4EtnRx7iZFh1orBWEWJetq1CiR/view?usp=drive_link",
+                href: "https://drive.google.com/file/d/1k8S8axuCykVEqpUL407P8R1IiczRxUGN/view?usp=sharing",
             },
         ],
     };
