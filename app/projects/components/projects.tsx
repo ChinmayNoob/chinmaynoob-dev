@@ -149,16 +149,18 @@ export function ProjectCard({ project, isExpanded, onToggle, ...props }: Project
                                             variants={overlayVariants}
                                         >
                                             <div className={`flex items-center gap-4 ${project.github ? 'gap-4' : ''}`}>
-                                                {/* Live Demo Button */}
-                                                <Link href={project.href} target="_blank">
-                                                    <motion.button
-                                                        className="bg-indigo-700 p-3 rounded-full flex items-center justify-center hover:bg-indigo-500 transition-all duration-300"
-                                                        whileHover={{ scale: 1.1 }}
-                                                        whileTap={{ scale: 0.95 }}
-                                                    >
-                                                        <CgArrowsExpandUpRight className="w-6 h-6 text-white" />
-                                                    </motion.button>
-                                                </Link>
+                                                {/* Live Demo Button - Only show if live URL exists */}
+                                                {project.href && (
+                                                    <Link href={project.href} target="_blank">
+                                                        <motion.button
+                                                            className="bg-indigo-700 p-3 rounded-full flex items-center justify-center hover:bg-indigo-500 transition-all duration-300"
+                                                            whileHover={{ scale: 1.1 }}
+                                                            whileTap={{ scale: 0.95 }}
+                                                        >
+                                                            <CgArrowsExpandUpRight className="w-6 h-6 text-white" />
+                                                        </motion.button>
+                                                    </Link>
+                                                )}
 
                                                 {/* GitHub Button - Only show if github URL exists */}
                                                 {project.github && (
@@ -189,16 +191,18 @@ export function ProjectCard({ project, isExpanded, onToggle, ...props }: Project
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.15 }}
                             >
-                                {/* Live Demo Button */}
-                                <Link href={project.href} target="_blank" className="flex-1">
-                                    <motion.button
-                                        className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg flex items-center justify-center transition-all duration-300"
-                                        whileHover={{ scale: 1.02 }}
-                                        whileTap={{ scale: 0.98 }}
-                                    >
-                                        <CgArrowsExpandUpRight className="w-6 h-6" />
-                                    </motion.button>
-                                </Link>
+                                {/* Live Demo Button - Only show if live URL exists */}
+                                {project.href && (
+                                    <Link href={project.href} target="_blank" className="flex-1">
+                                        <motion.button
+                                            className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg flex items-center justify-center transition-all duration-300"
+                                            whileHover={{ scale: 1.02 }}
+                                            whileTap={{ scale: 0.98 }}
+                                        >
+                                            <CgArrowsExpandUpRight className="w-6 h-6" />
+                                        </motion.button>
+                                    </Link>
+                                )}
 
                                 {/* GitHub Button - Only show if github URL exists */}
                                 {project.github && (

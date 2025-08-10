@@ -26,7 +26,7 @@ export type Project = {
     image: string
     skills: string[]
     icons: React.ReactNode[]
-    href?: string
+    href?: string | null
     github?: string
     status: "completed" | "in-progress" | "archived"
 }
