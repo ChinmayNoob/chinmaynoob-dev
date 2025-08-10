@@ -1,5 +1,5 @@
 import React from "react"
-import { FaSass } from "react-icons/fa6";
+import { FaGolang, FaSass } from "react-icons/fa6";
 import {
     SiReact,
     SiNextdotjs,
@@ -26,7 +26,7 @@ export type Project = {
     image: string
     skills: string[]
     icons: React.ReactNode[]
-    href: string
+    href?: string
     github?: string
     status: "completed" | "in-progress" | "archived"
 }
@@ -41,7 +41,7 @@ export const projects: Project[] = [
                 Developed a questionnaire platform for coders to ask and solve questions and queries having community supports.Built using Nextjs,Tanstack Query,Drizzle ORM,ShadnCN,Tailwind CSS
             </>
         ),
-        image: "/assets/projects/loopin.webp",
+        image: "/assets/projects/loopin.png",
         skills: ["Next.js", "Tanstack Query", "Drizzle ORM", "ShadnCN", "Tailwind CSS"],
         icons: [
             <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
@@ -288,6 +288,61 @@ export const projects: Project[] = [
         ],
         href: "https://omen-eta.vercel.app/",
         github: "https://github.com/ChinmayNoob/omen",
+        status: "completed"
+    },
+    {
+        number: "13",
+        title: "Zoro Studios",
+        introDescription: "A Landing Page for a Studio built using Next.js, GSAP, Motion having a cool loader component",
+        description: (
+            <>
+                Built a landing page for a studio using Next.js, GSAP, and Framer Motion. Features a cool loader component and a modern, responsive design.
+            </>
+        ),
+        image: "/assets/projects/zoro.png",
+        skills: ["Next.js", "Framer Motion", "TypeScript", "GSAP"],
+        icons: [
+            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
+            <SiFramer key="framer" className="text-black dark:text-white" />,
+            <SiTypescript key="typescript" className="text-blue-600" />,
+            <SiGreensock key="gsap" className="text-green-600" />
+        ],
+        href: "https://zoro-studios-five.vercel.app/",
+        github: "https://github.com/ChinmayNoob/zoro-studios",
+        status: "completed"
+    },
+    {
+        number: "14",
+        title: "Claude AI Agent",
+        introDescription: "A Claude AI Agent built in Golang that can list files, read files, edit code, and answer project-related questions with seamless tool integrations for developer workflows.",
+        description: (
+            <>
+                This Golang-based Claude AI Agent enhances developer productivity by automating file management, code editing, and project insights. It integrates seamlessly with your workspace to handle interactive queries and streamline development tasks efficiently.
+            </>
+        ),
+        image: "/assets/projects/agent.webp",
+        skills: ["Golang"],
+        icons: [
+            <FaGolang key="golang" className="text-blue-600" />
+        ],
+        github: "https://github.com/ChinmayNoob/claude-agent",
+        status: "completed"
+    },
+    {
+        number: "15",
+        title: "Go-Parser",
+        introDescription: "A lightweight, fast SQL parser written in Go, specifically designed for querying CSV files.",
+        description: (
+            <>
+                A lightweight, fast SQL parser written in Go, specifically designed for querying CSV files. This parser supports the essential SQL operations (SELECT, INSERT, UPDATE, DELETE) with comprehensive error handling and validation.
+            </>
+        ),
+        image: "/assets/projects/parser.webp",
+        skills: ["Golang"],
+        icons: [
+            <FaGolang key="golang" className="text-blue-600" />
+        ],
+        github: "https://github.com/ChinmayNoob/parser-go",
         status: "completed"
     },
 ] 
