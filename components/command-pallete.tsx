@@ -77,7 +77,7 @@ export function CommandPalette() {
                     window.open("https://codeforces.com/profile/Chinmay04AUG_", "_blank");
                 } else if (e.key === "r" || e.key === "R") {
                     e.preventDefault();
-                    window.open("https://drive.google.com/file/d/1k8S8axuCykVEqpUL407P8R1IiczRxUGN/view?usp=sharing", "_blank");
+                    window.open("https://drive.google.com/file/d/1cd6GSCgtu-8VBx2X1GAXVeZOUU0LjnF_/view?usp=sharing", "_blank");
                 } else if (e.key === "g" || e.key === "G") {
                     const handleSecondKey = (e2: KeyboardEvent) => {
                         if (e2.key === "h" || e2.key === "H") {
@@ -133,7 +133,7 @@ export function CommandPalette() {
     };
 
     const handleSendEmail = () => {
-        window.location.href = "mailto:chinmay.sawant4804@gmail.com";
+        window.location.href = "mailto:chinmaypvt04@gmail.com";
         setOpen(false);
     };
 
@@ -148,7 +148,7 @@ export function CommandPalette() {
             },
             {
                 icon: <MailIcon />,
-                label: "Send Email <chinmay.sawant4804@gmail.com>",
+                label: "Send Email <chinmaypvt04@gmail.com>",
                 shortcut: "E",
                 action: handleSendEmail,
             },
