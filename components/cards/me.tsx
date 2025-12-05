@@ -13,7 +13,7 @@ export function MeCard() {
       >
          <Image
             alt="Chinmay Sawant"
-            src="/assets/chinmay.webp"
+            src="/assets/chinmay-grey.jpg"
             height={300}
             width={300}
             className="h-full object-cover grayscale-[0.35] filter"
