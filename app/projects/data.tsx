@@ -1,5 +1,5 @@
 import React from "react"
-import { FaGolang, FaSass } from "react-icons/fa6";
+import { FaGolang, FaSass, FaServer } from "react-icons/fa6";
 import {
     SiReact,
     SiNextdotjs,
@@ -14,8 +14,12 @@ import {
     SiReactquery,
     SiDrizzle,
     SiZincsearch,
-    SiNpm
+    SiNpm,
+    SiPostgresql,
+    SiDocker
 } from "react-icons/si"
+import { DiRedis } from "react-icons/di";
+
 import { TbBrandThreejs } from "react-icons/tb";
 
 export type Project = {
@@ -34,6 +38,49 @@ export type Project = {
 export const projects: Project[] = [
     {
         number: "01",
+        title: "Fern-UI - A Component Library",
+        introDescription: "An open-source collection of 15+ high-quality components having smooth animations using Motion and GSAP",
+        description: (
+            <>
+                Fern UI A minimalist React component library built for speed and aesthetics. Combining the utility of Tailwind CSS with the high-performance animations of Framer Motion and GSAP, Fern UI offers 15+ production-ready components designed to bridge the gap between simple layouts and complex interactivity.
+            </>
+        ),
+        image: "/assets/projects/fern-ui.png",
+        skills: ["React", "ShadnCN", "Tailwind CSS", "Framer Motion", "GSAP"],
+        icons: [
+            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
+            <SiShadcnui key="shadcn" className="text-white" />,
+            <SiTailwindcss key="tailwind" className="text-cyan-500" />,
+            <SiFramer key="framer" className="text-black dark:text-white" />,
+            <SiGreensock key="gsap" className="text-green-600" />,
+        ],
+        href: "https://fern-ui.vercel.app/",
+        github: "https://github.com/ChinmayNoob/fern-ui",
+        status: "completed"
+    },
+    {
+        number: "02",
+        title: "Conductor - A Distributed Task Scheduler",
+        introDescription: "A distributed task scheduler built using Go, PostgreSQL, Redis and gRPC",
+        description: (
+            <>
+                Conductor is a distributed task scheduler built using Go, PostgreSQL, Redis and gRPC. It is a scalable and fault-tolerant task scheduler that can handle large number of tasks and can be used in distributed systems.
+            </>
+        ),
+        image: "/assets/projects/conductor.png",
+        skills: ["Go", "PostgreSQL", "Redis", "gRPC", "Docker"],
+        icons: [
+            <FaGolang key="golang" className="text-blue-600" />,
+            <SiPostgresql key="postgresql" className="text-blue-600" />,
+            <DiRedis key="redis" className="text-red-500" />,
+            <FaServer key="grpc" className="text-green-600" />,
+            <SiDocker key="docker" className="text-blue-600" />,
+        ],
+        github: "https://github.com/ChinmayNoob/conductor",
+        status: "completed"
+    },
+    {
+        number: "03",
         title: "Loopin - A Questionnaire Platform",
         introDescription: "A platform for coders to ask and solve questions and queries with community support",
         description: (
@@ -55,7 +102,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "02",
+        number: "04",
         title: "Faker-ind",
         introDescription: "A comprehensive npm package for generating fake data for Indian users",
         description: (
@@ -74,7 +121,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "03",
+        number: "05",
         title: "Laughtale-A One Piece Game",
         introDescription: "One Piece-themed Monopoly board game with animated landing and character reveals.",
         description: (
@@ -95,7 +142,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "04",
+        number: "06",
         title: "T3XTURE",
         introDescription: "A fully responsive and dynamic website for an agency ",
         description: (
@@ -116,7 +163,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "05",
+        number: "07",
         title: "Lamo",
         introDescription: "Meme Generator",
         description: (
@@ -136,7 +183,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "06",
+        number: "08",
         title: "BoxBox - A F1 Concept",
         introDescription: "2025 F1 Season Details",
         description: (
@@ -158,7 +205,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "07",
+        number: "09",
         title: "Crollo",
         introDescription: "A full stack note taking app",
         description: (
@@ -181,7 +228,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "08",
+        number: "10",
         title: "808s",
         introDescription: "A minimalistic music player",
         description: (
@@ -203,7 +250,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "09",
+        number: "11",
         title: "Jhoom",
         introDescription: "A web-based video conferencing platform",
         description: (
@@ -226,7 +273,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "10",
+        number: "12",
         title: "Urahara's Kitchen",
         introDescription: "A fully responsive and dynamic website for a restaurant",
         description: (
@@ -248,7 +295,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "11",
+        number: "13",
         title: "Wesleys Theory",
         introDescription: "A landing page dedicated to Kendrick Lamar&apos;s intro song",
         description: (
@@ -271,7 +318,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "12",
+        number: "14",
         title: "Omen",
         introDescription: "An Effective Pomodoro Timer",
         description: (
@@ -291,7 +338,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "13",
+        number: "15",
         title: "Zoro Studios",
         introDescription: "A Landing Page for a Studio built using Next.js, GSAP, Motion having a cool loader component",
         description: (
@@ -312,7 +359,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "14",
+        number: "16",
         title: "Claude AI Agent",
         introDescription: "A Claude AI Agent built in Golang that can list files, read files, edit code, and answer project-related questions with seamless tool integrations for developer workflows.",
         description: (
@@ -329,7 +376,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "15",
+        number: "17",
         title: "Go-Parser",
         introDescription: "A lightweight, fast SQL parser written in Go, specifically designed for querying CSV files.",
         description: (
