@@ -68,11 +68,10 @@ export const projects: Project[] = [
             </>
         ),
         image: "/assets/projects/conductor.png",
-        skills: ["Go", "PostgreSQL", "Redis", "gRPC", "Docker"],
+        skills: ["Go", "PostgreSQL", "gRPC", "Docker"],
         icons: [
             <FaGolang key="golang" className="text-blue-600" />,
             <SiPostgresql key="postgresql" className="text-blue-600" />,
-            <DiRedis key="redis" className="text-red-500" />,
             <FaServer key="grpc" className="text-green-600" />,
             <SiDocker key="docker" className="text-blue-600" />,
         ],
