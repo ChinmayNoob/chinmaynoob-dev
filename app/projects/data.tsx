@@ -1,5 +1,5 @@
 import React from "react"
-import { FaGolang, FaSass, FaServer } from "react-icons/fa6";
+import { FaGolang, FaKey, FaSass, FaServer } from "react-icons/fa6";
 import {
     SiReact,
     SiNextdotjs,
@@ -18,7 +18,6 @@ import {
     SiPostgresql,
     SiDocker
 } from "react-icons/si"
-import { DiRedis } from "react-icons/di";
 
 import { TbBrandThreejs } from "react-icons/tb";
 
@@ -389,6 +388,29 @@ export const projects: Project[] = [
             <FaGolang key="golang" className="text-blue-600" />
         ],
         github: "https://github.com/ChinmayNoob/parser-go",
+        status: "completed"
+    },
+    {
+        number: "18",
+        title: "Usogui",
+        introDescription: "A Nextjs Starter Template",
+        description: (
+            <>
+                A Nextjs Starter Template having Drizzle ORM, ShadCN UI, Tailwind CSS, TypeScript,Better Auth.
+            </>
+        ),
+        image: "/assets/projects/usogui.png",
+        skills: ["Next.js", "Drizzle ORM", "ShadCN UI", "Tailwind CSS", "TypeScript", "Better Auth"],
+        icons: [
+            <SiNextdotjs key="nextjs" className="text-black dark:text-white" />,
+            <SiDrizzle key="drizzle" className="text-green-500" />,
+            <SiShadcnui key="shadcn" className="text-white" />,
+            <SiTailwindcss key="tailwind" className="text-cyan-500" />,
+            <SiTypescript key="typescript" className="text-blue-600" />,
+            <FaKey key="better-auth" className="text-purple-600" />
+        ],
+        href: "https://usogui.vercel.app/",
+        github: "https://github.com/ChinmayNoob/usogui",
         status: "completed"
     },
 ] 
