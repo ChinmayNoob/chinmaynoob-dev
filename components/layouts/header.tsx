@@ -10,8 +10,10 @@ const navItems: NavItem[] = [
    { name: "Home", link: "/" },
    { name: "Work", link: "/work" },
    { name: "Projects", link: "/projects" },
-   { name: "Bookshelf", link: "/bookshelf" },
+   { name: "Skills", link: "/skills" },
    { name: "Blogs", link: "/blogs" },
+   { name: "Bookshelf", link: "/bookshelf" },
+
 ]
 
 export function Header() {
