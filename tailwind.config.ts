@@ -23,6 +23,7 @@ const config = {
          fontFamily: {
             sans: ["var(--font-sans)", ...fontFamily.sans],
             pacifico: ["var(--font-pacifico)"],
+            inter: ["var(--font-inter)"],
          },
          colors: {
             border: "hsl(var(--border))",

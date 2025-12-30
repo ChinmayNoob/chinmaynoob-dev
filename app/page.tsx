@@ -31,7 +31,7 @@ export default function Home() {
             I&apos;m a <span className="font-bold text-black dark:text-white">full-stack developer</span> from India, having experience in working with various languages,frameworks and tools.
           </p>
           <p className="text-base font-normal leading-relaxed">
-            Currently, working on <Link className="font-bold text-black dark:text-white" href="https://acetrumpets.vercel.app" target="_blank">Ace Trumpets UI</Link>. I am open for frontend and full-stack opportunities.
+            Currently, working on <Link className="font-bold text-black dark:text-white" href="https://fern-ui.vercel.app" target="_blank">Fern UI</Link>. I am open for FullStack and SDE opportunities.
           </p>
           <p className="text-base font-normal leading-relaxed">When I am not coding you will find me reading mangas or brainstorming new ideas.</p>
         </Motion>

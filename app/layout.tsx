@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Epilogue, Pacifico } from "next/font/google";
+import { Epilogue, Inter, Pacifico } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Header } from "@/components/layouts/header";
@@ -8,6 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 const epilogue = Epilogue({ subsets: ["latin"], variable: "--font-sans" });
 const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"], variable: "--font-pacifico" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "Chinmay | Full-Stack Developer",
@@ -66,7 +67,8 @@ export default function RootLayout({
         className={cn(
           "bg-neutral-100 text-neutral-700 dark:bg-neutral-950 dark:text-neutral-300",
           epilogue.variable,
-          pacifico.variable
+          pacifico.variable,
+          inter.variable
         )}
       >
         <ThemeProvider
