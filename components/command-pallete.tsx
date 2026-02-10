@@ -201,7 +201,7 @@ export function CommandPalette() {
                 ),
                 label: "View Resume",
                 shortcut: "R",
-                href: "https://drive.google.com/file/d/1Pu5gOV5OIa1lFImEJuSFwREORzf5af_c/view?usp=sharing",
+                href: "https://drive.google.com/file/d/1wzrtost8Xl8YjaPdkNZXBto97_Llhsa7/view?usp=sharing",
             },
         ],
     };
