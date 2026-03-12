@@ -16,7 +16,12 @@ import {
     SiZincsearch,
     SiNpm,
     SiPostgresql,
-    SiDocker
+    SiDocker,
+    SiBun,
+    SiTurborepo,
+    SiRedis,
+    SiMongoose,
+    SiExpress
 } from "react-icons/si"
 
 import { TbBrandThreejs } from "react-icons/tb";
@@ -37,6 +42,36 @@ export type Project = {
 export const projects: Project[] = [
     {
         number: "01",
+        title: "Lev",
+        introDescription: "A distributed, service-oriented crypto perpetuals trading platform built as a Turborepo monorepo.",
+        description: (
+            <>
+                <strong>LEV</strong> is a distributed, service-oriented crypto perpetuals trading platform built as a Turborepo monorepo.
+                It combines a React trading terminal, an Express API layer, an in-memory execution engine, Redis Streams, Redis Pub/Sub,
+                PostgreSQL, MongoDB, and dedicated realtime services to simulate fast leveraged trading.
+                The platform is organized around one core principle: keep latency-sensitive execution state in memory, move coordination
+                through Redis, and persist only the parts of the system that need durable history or fast recovery.
+            </>
+        ),
+        image: "/assets/projects/lev.webp",
+        skills: ["React", "Express", "Drizzle ORM", "MongoDB", "Redis", "WebSockets", "Docker", "Zod", "Bun"],
+        icons: [
+            <SiReact key="react" className="text-blue-500" />,
+            <SiExpress key="express" className="text-gray-500" />,
+            <SiRedis key="redis" className="text-red-500" />,
+            <SiDrizzle key="drizzle" className="text-green-500" />,
+            <SiDocker key="docker" className="text-blue-600" />,
+            <SiBun key="bun" className="text-orange-500" />,
+            <SiTurborepo key="turborepo" className="text-red-500" />,
+            <SiMongoose key="mongoose" className="text-green-500" />,
+            <SiPostgresql key="postgresql" className="text-blue-600" />,
+        ],
+        github: "https://github.com/ChinmayNoob/lev",
+        href: "https://youtu.be/ujG3ymrJBlc",
+        status: "completed"
+    },
+    {
+        number: "02",
         title: "Fern-UI - A Component Library",
         introDescription: "An open-source collection of 15+ high-quality components having smooth animations using Motion and GSAP",
         description: (
@@ -58,7 +93,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "02",
+        number: "03",
         title: "Conductor - A Distributed Task Scheduler",
         introDescription: "A distributed task scheduler built using Go, PostgreSQL, Redis and gRPC",
         description: (
@@ -78,7 +113,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "03",
+        number: "04",
         title: "Loopin - A Questionnaire Platform",
         introDescription: "A platform for coders to ask and solve questions and queries with community support",
         description: (
@@ -100,7 +135,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "04",
+        number: "05",
         title: "Faker-ind",
         introDescription: "A comprehensive npm package for generating fake data for Indian users",
         description: (
@@ -119,7 +154,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "05",
+        number: "06",
         title: "Laughtale-A One Piece Game",
         introDescription: "One Piece-themed Monopoly board game with animated landing and character reveals.",
         description: (
@@ -140,7 +175,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "06",
+        number: "07",
         title: "T3XTURE",
         introDescription: "A fully responsive and dynamic website for an agency ",
         description: (
@@ -161,7 +196,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "07",
+        number: "08",
         title: "Lamo",
         introDescription: "Meme Generator",
         description: (
@@ -181,7 +216,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "08",
+        number: "09",
         title: "BoxBox - A F1 Concept",
         introDescription: "2025 F1 Season Details",
         description: (
@@ -203,7 +238,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "09",
+        number: "10",
         title: "Crollo",
         introDescription: "A full stack note taking app",
         description: (
@@ -226,7 +261,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "10",
+        number: "11",
         title: "808s",
         introDescription: "A minimalistic music player",
         description: (
@@ -248,7 +283,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "11",
+        number: "12",
         title: "Jhoom",
         introDescription: "A web-based video conferencing platform",
         description: (
@@ -271,7 +306,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "12",
+        number: "13",
         title: "Urahara's Kitchen",
         introDescription: "A fully responsive and dynamic website for a restaurant",
         description: (
@@ -293,7 +328,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "13",
+        number: "14",
         title: "Wesleys Theory",
         introDescription: "A landing page dedicated to Kendrick Lamar&apos;s intro song",
         description: (
@@ -316,7 +351,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "14",
+        number: "15",
         title: "Omen",
         introDescription: "An Effective Pomodoro Timer",
         description: (
@@ -336,7 +371,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "15",
+        number: "16",
         title: "Zoro Studios",
         introDescription: "A Landing Page for a Studio built using Next.js, GSAP, Motion having a cool loader component",
         description: (
@@ -357,7 +392,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "16",
+        number: "17",
         title: "Claude AI Agent",
         introDescription: "A Claude AI Agent built in Golang that can list files, read files, edit code, and answer project-related questions with seamless tool integrations for developer workflows.",
         description: (
@@ -374,7 +409,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "17",
+        number: "18",
         title: "Go-Parser",
         introDescription: "A lightweight, fast SQL parser written in Go, specifically designed for querying CSV files.",
         description: (
@@ -391,7 +426,7 @@ export const projects: Project[] = [
         status: "completed"
     },
     {
-        number: "18",
+        number: "19",
         title: "Usogui",
         introDescription: "A Nextjs Starter Template",
         description: (
@@ -413,4 +448,4 @@ export const projects: Project[] = [
         github: "https://github.com/ChinmayNoob/usogui",
         status: "completed"
     },
-] 
+]
