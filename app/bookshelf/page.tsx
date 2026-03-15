@@ -9,9 +9,19 @@ export const metadata = {
 export default function Bookshelf() {
     const books = [
         {
+            name: "1984",
+            author: "George Orwell",
+            status: "reading"
+        },
+        {
+            name: "Kafka on the Shore",
+            author: "Haruki Murakami",
+            status: "read"
+        },
+        {
             name: "Notes from the Underground",
             author: "Fyodor Dostoevsky",
-            status: "reading"
+            status: "read"
         },
         {
             name: "Norwegian Wood",
