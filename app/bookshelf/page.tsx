@@ -33,11 +33,6 @@ export default function Bookshelf() {
             author: "Fyodor Dostoevsky",
             status: "read"
         },
-        {
-            name: "1984",
-            author: "George Orwell",
-            status: "read"
-        },
     ]
 
     const readingNow = books.filter((book) => book.status === "reading")
