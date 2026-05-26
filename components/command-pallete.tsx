@@ -156,7 +156,7 @@ export function CommandPalette() {
                 icon: <FaTwitter className="size-6" />,
                 label: "X",
                 shortcut: "T",
-                href: "https://x.com/0xSarthak13",
+                href: "https://x.com/Chinmay0408",
             },
             {
                 icon: (
